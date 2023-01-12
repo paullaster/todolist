@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
-import Form from './components/Form';
 import {v4 as uuidv4} from 'uuid';
 import './App.css';
 import CreateToDo from './components/CreateToDo';
-import LabeledInput from './components/LabeledInput';
 
 const App = () => {
   const [todos, setTodos] = useState ({
@@ -23,9 +21,7 @@ const onChangeHandler = (e) => {
 };
 
   return (
-    <Form>
-      <LabeledInput />
-    </Form>
+    
      
   );
 }

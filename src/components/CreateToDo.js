@@ -4,7 +4,7 @@ import LabeledInput from "./LabeledInput";
 const CreateToDo = () => {
   return (
     <Form>
-      <LabeledInput/>
+      <LabeledInput >Create a new to do</LabeledInput>
     </Form>
   );
 };
