@@ -8,7 +8,11 @@ const App = () => {
   });
 
 const onChangeHandler = (e) => {
-  setTodos();
+  setTodos(
+    (prev) => {
+      
+    }
+  );
 };
 
   return (
