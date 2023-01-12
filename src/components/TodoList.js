@@ -15,7 +15,12 @@ const TodoList = ({todos}) =>{
 const TodoListItem = ({label, created_at}) =>{
     return(
         <li>
-            
+            <span>
+                {label}
+            </span>
+            <span>
+                {created_at}
+            </span>
         </li>
     )
 };
