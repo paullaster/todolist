@@ -1,3 +1,5 @@
-const Form = () => {};
+const Form = ({children}) => {
+
+};
 
 export default Form;
