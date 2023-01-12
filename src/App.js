@@ -33,7 +33,7 @@ const onCheckboxChangeHandle = (id) => {
     (prev) => {
       prev.map (todo => {
         if (todo.id === id) {
-          
+          return {...todo, completed: !todo.completed}
         }
       })
     }
