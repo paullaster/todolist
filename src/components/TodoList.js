@@ -1,3 +1,5 @@
+import LabeledInput from "./LabeledInput";
+
 const TodoList = ({todos}) =>{
     return(
         <ul>
@@ -15,9 +17,11 @@ const TodoList = ({todos}) =>{
 const TodoListItem = ({label, created_at}) =>{
     return(
         <li>
-            <span>
-                {label}
-            </span>
+            <LabeledInput>
+                <span>
+                    {label}
+                </span>
+            </LabeledInput>
             <span>
                 {created_at}
             </span>
