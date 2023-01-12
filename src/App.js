@@ -9,11 +9,7 @@ const App = () => {
   });
   return (
     <>
-      <Form>
-        <LabeledInput>
-          
-        </LabeledInput>
-      </Form>
+      
     </>
   );
 }
