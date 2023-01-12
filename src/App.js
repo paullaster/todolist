@@ -4,14 +4,14 @@ import './App.css';
 import CreateToDo from './components/CreateToDo';
 
 const App = () => {
-  const [todos, setTodos] = useState ({
-    todos: JSON.parse(localStorage.getItem('todos')) || []
-  });
-//   const [task, setTasks] = useState ([]);
+  const [todos, setTodos] = useState (
+    JSON.parse(localStorage.getItem('todos')) || []
+  );
+  const [task, setTasks] = useState ([]);
 
-// const onChangeHandler = (e) => {
-//   setTasks ( e.target.value);
-// };
+const onChangeHandler = (e) => {
+  setTasks ( e.target.value);
+};
 
 // const onClickHandler = (e) => {
 //   e.preventDefault();
