@@ -10,10 +10,9 @@ const App = () => {
 const onChangeHandler = (e) => {
   setTodos(
     (prev) => {
-      return {
-        ...prev,
+      return prev = [...prev, {
         
-      }
+      }]
     }
   );
 };
