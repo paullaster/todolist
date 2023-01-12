@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import uuid  from 'uuidv4';
+import {v4 as uuidv4} from 'uuid';
 import './App.css';
 import CreateToDo from './components/CreateToDo';
 
@@ -12,7 +12,7 @@ const onChangeHandler = (e) => {
   setTodos(
     (prev) => {
       return prev = [...prev, {
-        id: uuid(),
+        id: uuidv4(),
         name: e.target.value.toLowerCase,
         checked: false,
       }]
@@ -22,7 +22,7 @@ const onChangeHandler = (e) => {
 
   return (
     <>
-      <CreateToDo onChange={onChangeHandler} />
+      <CreateToDo />
     </>
   );
 }
