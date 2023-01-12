@@ -48,7 +48,7 @@ const onCheckboxChangeHandle = (id) => {
         onClickHandler={onClickHandler}
         onChangeHandler={onChangeHandler}
       />
-      <TodoList todos={todos}/>
+      <TodoList todos={todos} onCheckboxChange={onCheckboxChangeHandle}/>
     </>
   );
 };
