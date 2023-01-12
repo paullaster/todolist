@@ -31,8 +31,7 @@ const App = () => {
         }
       ]);
     });
-    // localStorage.setItem('todos', JSON.stringify(todos));
-    // console.log (todos)
+    localStorage.setItem('todos', JSON.stringify(todos));
   };
   console.log(todos);
   return (
