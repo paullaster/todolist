@@ -21,9 +21,11 @@ const onClickHandler = (e) => {
   };
   console.log (task, newTask)
   
-  // setTodos (
-  //   newTask
-  // );
+  setTodos (
+    (prev) => {
+      
+    }
+  );
   // localStorage.setItem('todos', JSON.stringify(todos));
   // console.log (todos)
   
