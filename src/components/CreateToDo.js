@@ -1,6 +1,12 @@
 import Form from "./Form";
 import LabeledInput from "./LabeledInput";
 
-const CreateToDo = () => {};
+const CreateToDo = () => {
+    <Form>
+        <LabeledInput>
+          
+        </LabeledInput>
+    </Form>
+};
 
 export default CreateToDo;
