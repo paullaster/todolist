@@ -1,8 +1,10 @@
-const LabeledInput = ({children}) => {
+const LabeledInput = ({onChange, children}) => {
   return (
     <label>
         {children}
-        <input/>
+        <input
+        onChange={onChange}
+        />
     </label>
   )
 };
