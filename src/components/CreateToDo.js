@@ -1,10 +1,10 @@
 import Form from "./Form";
 import LabeledInput from "./LabeledInput";
 
-const CreateToDo = ({ onChange }) => {
+const CreateToDo = () => {
   return (
     <Form>
-      <LabeledInput>Create to do</LabeledInput>
+      <LabeledInput/>
     </Form>
   );
 };
