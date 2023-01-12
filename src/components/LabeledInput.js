@@ -1,4 +1,4 @@
-const LabeledInput = ({onChange, name,type="text",children}) => {
+const LabeledInput = ({onChange,type="text",children}) => {
   return (
     <label>
         {children}
