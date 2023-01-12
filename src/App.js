@@ -14,13 +14,6 @@ const App = () => {
   };
   const onClickHandler = e => {
     e.preventDefault();
-    const newTask = {
-      id: uuidv4(),
-      labale: task,
-      completed: false
-    };
-   // console.log(task, newTask);
-
     setTodos(prev => {
       return (prev = [
         ...prev,
