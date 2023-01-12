@@ -9,6 +9,9 @@ const App = () => {
     JSON.parse(localStorage.getItem("todos")) || []
   );
   const [task, setTasks] = useState([]);
+ useEffect ( ()=> {
+  localStorage.setItem('todos', JSON.stringify(todos));
+ }, [todos])
 
   const onChangeHandler = e => {
     setTasks(e.target.value);
@@ -26,7 +29,6 @@ const App = () => {
         }
       ]);
     });
-    localStorage.setItem('todos', JSON.stringify(todos));
   };
 const onCheckboxChangeHandle = (id) => {
   setTodos (
