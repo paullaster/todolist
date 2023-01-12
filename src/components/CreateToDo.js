@@ -6,7 +6,7 @@ const CreateToDo = () => {
   return (
     <Form>
       <LabeledInput >Create a new to do</LabeledInput>
-      <Button> Add </Button>
+      <Button> Add  new task </Button>
     </Form>
   );
 };
