@@ -34,7 +34,6 @@ const App = () => {
     });
     localStorage.setItem('todos', JSON.stringify(todos));
   };
-  console.log(todos);
   return (
     <CreateToDo
       onClickHandler={onClickHandler}
