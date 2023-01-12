@@ -7,8 +7,10 @@ const App = () => {
     todos: JSON.parse(localStorage.getItem('todos')) || []
   });
 
+const onChangeHandler = (e) => {
+  setTodos();
+};
 
-  
   return (
     <>
       <CreateToDo onChange={onChangeHandler} />
