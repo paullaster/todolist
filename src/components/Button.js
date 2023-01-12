@@ -5,3 +5,4 @@ const Button = ({Children}) => {
         </button>
     );
 };
+export default Button;
