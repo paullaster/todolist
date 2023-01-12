@@ -27,7 +27,6 @@ const App = () => {
       ]);
     });
     localStorage.setItem('todos', JSON.stringify(todos));
-    setTasks (e.target.previousSibling.value ='');
   };
   return (
     <>
