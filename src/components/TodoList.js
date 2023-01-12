@@ -17,7 +17,9 @@ const TodoList = ({todos}) =>{
 const TodoListItem = ({label, created_at}) =>{
     return(
         <li>
-            <LabeledInput>
+            <LabeledInput
+            type="checkbox"
+            >
                 <span>
                     {label}
                 </span>
