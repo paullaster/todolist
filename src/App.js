@@ -34,7 +34,7 @@ const App = () => {
         onClickHandler={onClickHandler}
         onChangeHandler={onChangeHandler}
       />
-      <TodoList />
+      <TodoList todos={todos}/>
     </>
   );
 };
