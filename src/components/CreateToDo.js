@@ -2,7 +2,7 @@ import Button from "./Button";
 import Form from "./Form";
 import LabeledInput from "./LabeledInput";
 
-const CreateToDo = () => {
+const CreateToDo = ({onClickHandler, onChangeHandler}) => {
   return (
     <Form>
       <LabeledInput >Create a new to do</LabeledInput>

@@ -27,7 +27,10 @@ const onClickHandler = (e) => {
 };
 
   return (
-    <CreateToDo />
+    <CreateToDo 
+    onClickHandler={onClickHandler}
+    onChangeHandler={onChangeHandler}
+    />
   );
 }
 
