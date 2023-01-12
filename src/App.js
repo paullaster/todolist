@@ -23,7 +23,9 @@ const onClickHandler = (e) => {
   
   setTodos (
     (prev) => {
-      
+      return prev = [...prev, {
+        
+      }]
     }
   );
   // localStorage.setItem('todos', JSON.stringify(todos));
