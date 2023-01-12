@@ -5,8 +5,12 @@ import LabeledInput from "./LabeledInput";
 const CreateToDo = ({onClickHandler, onChangeHandler}) => {
   return (
     <Form>
-      <LabeledInput >Create a new to do</LabeledInput>
-      <Button> Add  new task </Button>
+      <LabeledInput 
+      onChange={onChangeHandler}
+      >Create a new to do</LabeledInput>
+      <Button 
+      onClick = {onClickHandler}
+      > Add  new task </Button>
     </Form>
   );
 };
