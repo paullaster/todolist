@@ -6,9 +6,12 @@ const App = () => {
   const [todos, setTodos] = useState ({
     todos: JSON.parse(localStorage.getItem('todos')) || []
   });
+
+
+  
   return (
     <>
-      <CreateToDo>
+      <CreateToDo onChange={onChangeHandler} />
     </>
   );
 }
