@@ -31,9 +31,11 @@ const App = () => {
 const onCheckboxChangeHandle = (id) => {
   setTodos (
     (prev) => {
-      prev.map (todo => {
+      return prev.map (todo => {
         if (todo.id === id) {
-          return {...todo, completed: !todo.completed}
+          return {...todo, completed: !todo.completed};
+        }else{
+          return todo;
         }
       })
     }
