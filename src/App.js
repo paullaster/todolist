@@ -24,7 +24,8 @@ const onClickHandler = (e) => {
   tastArray = [...tastArray, newTask]
   setTodos(tastArray);
 
-  
+  localStorage.setItem('todos', JSON.stringify(todos));
+  console.log (todos)
   
 };
 
