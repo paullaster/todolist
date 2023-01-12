@@ -20,8 +20,11 @@ const onClickHandler = (e) => {
     labale: task,
     completed: false,
   };
-  setTodos(newTask);
-  console.log (todos);
+  let tastArray = [];
+  tastArray = [...tastArray, newTask]
+  setTodos(tastArray);
+
+  
   
 };
 
