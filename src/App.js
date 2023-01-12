@@ -11,18 +11,20 @@ const App = () => {
 
 const onChangeHandler = (e) => {
   setTasks ( e.target.value);
+};
+
+const onClickHandler = (e) => {
+  e.preventDefault();
   setTodos(
     (prev) => {
       return prev = [...prev, {
         id: uuidv4(),
-        name: e.target.value.toLowerCase,
+        label: task,
         checked: false,
       }]
     }
   );
 };
-
-const onClickHandler = (e) => {};
 
   return (
     <CreateToDo />
