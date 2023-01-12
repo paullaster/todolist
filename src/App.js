@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import Form from './components/Form';
+import LabeledInput from './components/LabeledInput';
 import './App.css';
 
 const App = () => {
@@ -7,7 +9,11 @@ const App = () => {
   });
   return (
     <>
-    
+      <Form>
+        <LabeledInput>
+          
+        </LabeledInput>
+      </Form>
     </>
   );
 }
