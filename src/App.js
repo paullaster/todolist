@@ -28,7 +28,13 @@ const App = () => {
     });
     localStorage.setItem('todos', JSON.stringify(todos));
   };
-const onCheckboxChangeHandle = () => {};
+const onCheckboxChangeHandle = (id) => {
+  setTodos (
+    (prev) => {
+      
+    }
+  )
+};
 
   return (
     <>
