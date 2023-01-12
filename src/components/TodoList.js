@@ -3,26 +3,26 @@ import LabeledInput from "./LabeledInput";
 const TodoList = ({ todos, onCheckboxChange }) => {
   return (
     <ul>
-      {todos.map(({todo }) => {
-        return <TodoListItem key={id} todo= {todo} onCheckboxChange={onCheckboxChange}/>;
+      {todos.map((todo) => {
+        return <TodoListItem key={todo.id} todo= {todo} onCheckboxChange={onCheckboxChange}/>;
       })}
     </ul>
   );
 };
 
-const TodoListItem = ({ label, created_at, onCheckboxChange }) => {
+const TodoListItem = ({todo, onCheckboxChange}) => {
   return (
   <LabeledInput
     type="checkbox"
-    onChange={()=>onCheckboxChange(id) }
+    onChange={()=>onCheckboxChange(todo.id) }
 
    >
     <li>
                 <span>
-                    {label}
+                    {todo.label}
                 </span>
             <span>
-                {created_at}
+                {todo.created_at}
             </span>
         </li>
   </LabeledInput>
