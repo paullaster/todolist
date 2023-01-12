@@ -28,7 +28,7 @@ const App = () => {
 //   console.log (todos)
   
 // };
-
+  console.log (todos)
   return (
     <CreateToDo 
     //onClickHandler={onClickHandler}
