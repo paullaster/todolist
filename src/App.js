@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import CreateToDo from './components/CreateToDo';
 
 const App = () => {
   const [todos, setTodos] = useState ({
@@ -7,7 +8,7 @@ const App = () => {
   });
   return (
     <>
-      
+      <CreateToDo>
     </>
   );
 }
