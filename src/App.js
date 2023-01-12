@@ -12,26 +12,27 @@ const App = () => {
 const onChangeHandler = (e) => {
   setTasks ( e.target.value);
 };
-// const onClickHandler = (e) => {
-//   e.preventDefault();
-//   const newTask = {
-//     id: uuidv4(),
-//     labale: task,
-//     completed: false,
-//   };
+const onClickHandler = (e) => {
+  e.preventDefault();
+  const newTask = {
+    id: uuidv4(),
+    labale: task,
+    completed: false,
+  };
+  console.log (task, newTask)
   
-//   setTodos (
-//     newTask
-//   );
-//   localStorage.setItem('todos', JSON.stringify(todos));
-//   console.log (todos)
+  // setTodos (
+  //   newTask
+  // );
+  // localStorage.setItem('todos', JSON.stringify(todos));
+  // console.log (todos)
   
-// };
+};
   console.log (todos)
   return (
     <CreateToDo 
-    //onClickHandler={onClickHandler}
-    //onChangeHandler={onChangeHandler}
+    onClickHandler={onClickHandler}
+    onChangeHandler={onChangeHandler}
     />
   );
 }
