@@ -21,15 +21,7 @@ const onClickHandler = (e) => {
     labale: task,
     completed: false,
   };
-  setTodos(
-    (prev) => {
-      return prev = [...prev, {
-        id: uuidv4(),
-        label: task,
-        checked: false,
-      }]
-    }
-  );
+  setTodos(newTask);
 };
 
   return (
