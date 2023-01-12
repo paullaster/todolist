@@ -16,15 +16,20 @@ const onChangeHandler = (e) => {
 const onClickHandler = (e) => {
   e.preventDefault();
   console.log (task);
-  // setTodos(
-  //   (prev) => {
-  //     return prev = [...prev, {
-  //       id: uuidv4(),
-  //       label: task,
-  //       checked: false,
-  //     }]
-  //   }
-  // );
+  const newTask = {
+    id: uuidv4(),
+    labale: task,
+    completed: false,
+  };
+  setTodos(
+    (prev) => {
+      return prev = [...prev, {
+        id: uuidv4(),
+        label: task,
+        checked: false,
+      }]
+    }
+  );
 };
 
   return (
