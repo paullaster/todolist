@@ -7,6 +7,7 @@ const App = () => {
   const [todos, setTodos] = useState ({
     todos: JSON.parse(localStorage.getItem('todos')) || []
   });
+  const [task, setTasks]
 
 const onChangeHandler = (e) => {
   setTodos(
@@ -21,8 +22,7 @@ const onChangeHandler = (e) => {
 };
 
   return (
-    
-     
+    <CreateToDo />
   );
 }
 
