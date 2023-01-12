@@ -12,5 +12,7 @@ const TodoList = ({todos}) =>{
     );
 };
 
-const TodoListItem = ({todos}) =>{};
+const TodoListItem = ({label, created_at}) =>{
+    
+};
 export default TodoList;
