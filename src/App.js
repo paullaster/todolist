@@ -13,6 +13,7 @@ const onChangeHandler = (e) => {
   setTasks ( e.target.value);
 };
 
+let tastArray = [];
 const onClickHandler = (e) => {
   e.preventDefault();
   const newTask = {
@@ -20,7 +21,6 @@ const onClickHandler = (e) => {
     labale: task,
     completed: false,
   };
-  let tastArray = [];
   tastArray = [...tastArray, newTask]
   setTodos(tastArray);
 
