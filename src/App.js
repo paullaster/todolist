@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import "./App.css";
 import CreateToDo from "./components/CreateToDo";
+import TodoList from "./components/TodoList";
 
 const App = () => {
   const [todos, setTodos] = useState(
@@ -28,10 +29,13 @@ const App = () => {
     localStorage.setItem('todos', JSON.stringify(todos));
   };
   return (
-    <CreateToDo
-      onClickHandler={onClickHandler}
-      onChangeHandler={onChangeHandler}
-    />
+    <>
+      <CreateToDo
+        onClickHandler={onClickHandler}
+        onChangeHandler={onChangeHandler}
+      />
+      <TodoList />
+    </>
   );
 };
 
