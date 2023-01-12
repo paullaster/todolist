@@ -3,8 +3,9 @@ import LabeledInput from "./LabeledInput";
 
 const CreateToDo = () => {
     <Form>
-        <LabeledInput>
-          
+        <LabeledInput
+        >
+          Create to do
         </LabeledInput>
     </Form>
 };
