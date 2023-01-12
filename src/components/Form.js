@@ -1,8 +1,9 @@
 const Form = ({children}) => {
  return (
-    {
-        children
-    }
+    <label>
+        Crete a new to do
+        <input/>
+    </label>
  );
 };
 

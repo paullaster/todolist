@@ -1,7 +1,7 @@
-const LabeledInput = () => {
+const LabeledInput = ({children}) => {
   return (
     <label>
-        Crete a new to do
+        {children}
         <input/>
     </label>
   )
