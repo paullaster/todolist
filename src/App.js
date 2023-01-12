@@ -12,7 +12,6 @@ const App = () => {
 const onChangeHandler = (e) => {
   setTasks ( e.target.value);
 };
-
 // const onClickHandler = (e) => {
 //   e.preventDefault();
 //   const newTask = {
