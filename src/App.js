@@ -27,7 +27,7 @@ const App = () => {
         {
           id: uuidv4(),
           labale: task,
-          created_at: 
+          created_at: Date.now(),
           completed: false
         }
       ]);
