@@ -11,7 +11,7 @@ const onChangeHandler = (e) => {
   setTodos(
     (prev) => {
       return prev = [...prev, {
-        
+        name: e.target.value.toLowerCase
       }]
     }
   );
