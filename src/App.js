@@ -15,13 +15,14 @@ const onChangeHandler = (e) => {
 
 const onClickHandler = (e) => {
   e.preventDefault();
-  console.log (task);
   const newTask = {
     id: uuidv4(),
     labale: task,
     completed: false,
   };
   setTodos(newTask);
+  console.log (todos);
+  
 };
 
   return (
