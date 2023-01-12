@@ -20,7 +20,7 @@ const App = () => {
         ...prev,
         {
           id: uuidv4(),
-          labale: task,
+          label: task,
           created_at: Date.now(),
           completed: false
         }
