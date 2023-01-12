@@ -7,32 +7,32 @@ const App = () => {
   const [todos, setTodos] = useState ({
     todos: JSON.parse(localStorage.getItem('todos')) || []
   });
-  const [task, setTasks] = useState ([]);
+//   const [task, setTasks] = useState ([]);
 
-const onChangeHandler = (e) => {
-  setTasks ( e.target.value);
-};
+// const onChangeHandler = (e) => {
+//   setTasks ( e.target.value);
+// };
 
-const onClickHandler = (e) => {
-  e.preventDefault();
-  const newTask = {
-    id: uuidv4(),
-    labale: task,
-    completed: false,
-  };
+// const onClickHandler = (e) => {
+//   e.preventDefault();
+//   const newTask = {
+//     id: uuidv4(),
+//     labale: task,
+//     completed: false,
+//   };
   
-  setTodos (
-    newTask
-  );
-  localStorage.setItem('todos', JSON.stringify(todos));
-  console.log (todos)
+//   setTodos (
+//     newTask
+//   );
+//   localStorage.setItem('todos', JSON.stringify(todos));
+//   console.log (todos)
   
-};
+// };
 
   return (
     <CreateToDo 
-    onClickHandler={onClickHandler}
-    onChangeHandler={onChangeHandler}
+    //onClickHandler={onClickHandler}
+    //onChangeHandler={onChangeHandler}
     />
   );
 }
