@@ -28,6 +28,8 @@ const App = () => {
     });
     localStorage.setItem('todos', JSON.stringify(todos));
   };
+const onCheckboxChangeHandle = () => {};
+
   return (
     <>
       <CreateToDo
