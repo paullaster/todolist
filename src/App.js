@@ -40,6 +40,7 @@ const onCheckboxChangeHandle = (id) => {
       })
     }
   )
+  console.log(todos);
 };
 
   return (
