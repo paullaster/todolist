@@ -19,7 +19,7 @@ const App = () => {
       labale: task,
       completed: false
     };
-    console.log(task, newTask);
+   // console.log(task, newTask);
 
     setTodos(prev => {
       return (prev = [
@@ -27,6 +27,7 @@ const App = () => {
         {
           id: uuidv4(),
           labale: task,
+          created_at: 
           completed: false
         }
       ]);
