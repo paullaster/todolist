@@ -10,6 +10,7 @@ const App = () => {
   const [task, setTasks] = useState ([]);
 
 const onChangeHandler = (e) => {
+  setTasks ( e.target.value);
   setTodos(
     (prev) => {
       return prev = [...prev, {
