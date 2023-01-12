@@ -31,7 +31,9 @@ const App = () => {
 const onCheckboxChangeHandle = (id) => {
   setTodos (
     (prev) => {
-      
+      prev.map (todo => {
+        
+      })
     }
   )
 };
